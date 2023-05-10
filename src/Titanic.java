@@ -1,7 +1,6 @@
 import javax.swing.*;
 
-class Titanic extends JFrame {
-
+public class Titanic extends JFrame {
     public static void main(String[] args) {
         new Titanic();
     }
@@ -9,13 +8,12 @@ class Titanic extends JFrame {
     public Titanic() {
         this.setTitle("Titanic Passengers Data");
         this.setLayout(null);
+        this.setResizable(false);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setSize(Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT);
         this.add(new ManageScreen(0, 0, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT));
         this.setVisible(true);
 
     }
-
-
 
 }
