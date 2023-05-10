@@ -325,6 +325,7 @@ public class ManageScreen extends JPanel {
             return passengers.stream().filter(Passenger::isAboveIdMin).filter(Passenger::isBelowIdMax).collect(Collectors.toList());
         }
 
+
     }
     public static List<Passenger> sortName(List<Passenger> passengers, JTextField name){
         if(name.getText().length() == Constants.INITIALIZE){
